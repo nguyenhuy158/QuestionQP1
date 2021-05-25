@@ -41,12 +41,29 @@ def inputStudyed(path='studyed.txt'):
 
 
 if __name__ == '__main__':
-    path = input("enter path: ")
-    if os.path.isfile(path):
-        manager = inputStudyed(path)
+    print('hi welcome to App.')
+    sections = os.listdir(os.getcwd())
+    # filter list
+    sections = [e for e in sections if '.txt' in e]
+    sections.sort()
+    for i in range(len(sections)):
+        print("{} : {}.".format(i, sections[i]))
+
+    choose = ''
+    while True:
+        try:
+            choose = int(
+                input("enter number in [{} - {}]: ".format(0, len(sections) - 1)))
+            if os.path.isfile(sections[choose]):
+                break
+        except Exception as e:
+            pass
+
+    if os.path.isfile(sections[choose]):
+        manager = inputStudyed(sections[choose])
         if manager != None:
             manager.study()
-        if manager.save(path):
+        if manager.save(sections[choose]):
             print('see yah')
         else:
             print('error. all answer is not save')

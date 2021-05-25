@@ -1,11 +1,13 @@
 import random
 
 
-def mySort(e):
-    a = int(e.cRight) - int(e.cWrong)
-    if (a < 0):
-        return 0
-    return a
+def inputInt(content):
+    while True:
+        try:
+            choose = int(input(content))
+            return choose
+        except Exception as e:
+            print('enter again!')
 
 
 class ManagerQuestion:
@@ -24,58 +26,107 @@ class ManagerQuestion:
         for e in self.list:
             print(e)
 
+    def getRank(self):
+        self.sort()
+        for i in range(self.count):
+            print("{} - {}/{}".format(i,
+                  self.list[i].cRight, self.list[i].cWrong))
+
     def study(self):
         # title game
         print("==>Welcome to my Study<==")
-        print('Please enter if you can continue')
 
         numberAnswered = 0
         while True:
-            self.list.sort(key=mySort)
+            self.sort()
             # random choice in 1/3 question first in list
             # because they are question you is wrong
             ques = random.choice(self.list[0:int(self.count / 3)])
             print(ques)
 
+            # user choose
             userChoose = str(
                 input("[{}/{}] enter 1 2 3 4 or cancel(c) offer(o): ".format(numberAnswered, self.count)))
-            numberAnswered += 1
-
             while (userChoose == ''
                    or not (userChoose == '1' or userChoose == '2'
                            or userChoose == '3' or userChoose == '4' or userChoose == 'c' or userChoose == 'o')):
-                userChoose = str(input("enter again:"))
+                userChoose = str(input("enter again: "))
 
+            # offer
+            if (userChoose == 'o'):
+                print('1. thay doi dap an cau hien tai.')
+                print('2. show n cau sai nhieu nhat.')
+                print('3. xuat ra n cau co ti le (sai - dung) > 0.')
+
+                # choose offer
+                choose = inputInt('enter offer: ')
+                if choose == 1:
+                    ques.setKey()
+                elif choose == 2:
+                    nQuestion = inputInt('enter n = ')
+                    while nQuestion < 0 or nQuestion >= self.count:
+                        nQuestion = inputInt()
+                    mostWrongs = self.getQuestionMostWrongs(nQuestion)
+                    pathMostWrong = input("enter path to store: ")
+                    self.write(mostWrongs, pathMostWrong)
+                elif choose == 3:
+                    pass
+                else:
+                    print("developing... coming soon")
+                continue
+
+            # cancel
             if (userChoose == 'c'):
                 break
 
-            if (userChoose == 'o'):
-                print('1. thay doi dap an cau hien tai.')
-
-                print('2. show n cau sai nhieu nhat')
-                print('3. xuat ra n cau co ti le (sai - dung) > 0.')
-                print('developing... coming soon')
-                continue
-
+            # 1 2 3 4
             if (ques.check(userChoose)):
                 print("congratulations")
                 ques.right()
             else:
-                print("you choose {} is not answer, right answer is {}".format(
-                    userChoose, ques.getInfoAnswer()))
+                print("you choose {} is not answer, {}".format(
+                    userChoose, ques.getKey()))
                 input()
                 ques.wrong()
+            numberAnswered += 1
+
+    def write(self, source, path='out-studyed.txt'):
+        print("i'm storing...")
+        try:
+            with open(path, mode='w') as fo:
+                for e in source:
+                    fo.write("{}\n".format(e.getInformation()))
+                return True
+        except Exception as e:
+            return False
 
     def save(self, path='out-studyed.txt'):
         print("i'm storing...")
         try:
             with open(path, mode='w') as fo:
-                self.list.sort(key=mySort)
+                self.sort()
                 for e in self.list:
                     fo.write("{}\n".format(e.getInformation()))
                 return True
         except Exception as e:
             return False
+
+    def sort(self):
+        self.list.sort(key=lambda e: (
+            str(e.cWrong), str(e.cRight)), reverse=True)
+
+    def get(self, index=0):
+        return self.list[index]
+
+    def getQuestionMostWrongs(self, count=5):
+        mostWrongs = []
+        for i in range(count):
+            mostWrongs.append(self.get(i))
+        return mostWrongs
+
+    def getQuestionMostWrong(self):
+        self.sort()
+        return self.get(0)
 
     def __str__(self):
         return "managerQuestion have {} questions".format(str(self.count))
@@ -92,14 +143,16 @@ class Question:
         self.cRight = cRight
         self.cWrong = cWrong
 
-    def changeKey(self):
-        newKey = str(input("please enter new key 1 2 3 4: "))
-        while (not (newKey == '1' or newKey == '2' or newKey == '3' or newKey == '4')):
-            newKey = str(input("enter again: "))
-        self.key = newKey
-
-    def showTitle(self):
-        print("Cau hoi: {}\n".format(self.ques))
+    def setKey(self):
+        while True:
+            try:
+                newKey = int(input("please enter new key 1 2 3 4: "))
+                if newKey > 4 or newKey < 1:
+                    continue
+                self.key = newKey
+                break
+            except Exception as e:
+                pass
 
     def check(self, e):
         if (str(self.key).__eq__(str(e))):
@@ -112,16 +165,13 @@ class Question:
     def wrong(self):
         self.cWrong = int(self.cWrong) + 1
 
-    def getAnswer(self):
-        return self.key
-
-    def getInfoAnswer(self):
+    def getKey(self):
         ans = ""
         ans = self.ans1 if self.key == '1' else ans
         ans = self.ans2 if self.key == '2' else ans
         ans = self.ans3 if self.key == '3' else ans
         ans = self.ans4 if self.key == '4' else ans
-        return "{}. {}".format(self.key, ans)
+        return "answer is {}. {}".format(self.key, ans)
 
     def getInformation(self):
         return str(self.ques) + "\n" + str(self.ans1) + "\n" + str(self.ans2) + "\n" + str(self.ans3) + "\n" + str(self.ans4) + "\n" + str(self.key) + "\n" + str(self.cRight) + "\n" + str(self.cWrong)

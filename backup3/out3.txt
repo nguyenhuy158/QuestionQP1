@@ -4,8 +4,8 @@ B. Nhiệm vụ chiến lược
 C. Nhiệm vụ hàng đầu
 D. Nhiệm vụ trọng tâm
 2
-0
-0
+1
+1
 2. Hai nhiệm vụ chiến lược củacách mạng Việt Nam hiện nay là:
 A. Xây dựng phát triển kinh tế và bảo vệ vững chắc dộc lập dân tộc
 B. Bảo vệ tổ quốc XHCN và xây dựng đất nước xã hội chủ nghĩa
@@ -13,15 +13,15 @@ C. Xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc xã hội chủ
 D. Bảo vệ độc lập dân tộc và xây dựng xã hội chủ nghĩa
 3
 0
-0
+1
 3. Một trong những đặc trưng của nềnQPTD, ANND là nền quốc phòng, an ninh:
 A. Bảo vệ quyền vàlợi ích của nhân dân
 B. Vì dân, của dân vàdo nhân dân tiến hành
 C. Mang tính giai cấp, nhân dân sâu sắc
 D. Do nhân dân xây dựng, mang tính nhân dân sâu sắc
 2
-0
-0
+1
+1
 4. Sức mạnh của nềnQPTD, ANND ở nước ta là:
 A. Sức mạnh của cả hệ thống chính trị trong nước
 B. Sức mạnh do các yếu tố chính trị, kinh tế, văn hóa, khoa học
@@ -36,14 +36,6 @@ B. Tổ chức phòng thủ quân sự, kết hợp với chủ động tiến c
 C. Tổ chức phòng thủ dân sự, kết hợp cải tạo địa hình với xây dựng hạ tầng
 D. Tổ chức phòng thủ quân sự, kết hợp với các biện pháp chống địch tiến công
 3
-0
-0
-6. Quá trình hiện đại hóanền QPTD, ANND phải gắn liền với:
-A. Công nghiệp hóa, hiện đại hóa đất nước
-B. Tiềm lực khoa học công nghệ của nước ta
-C. Hiện đại hóa nền kinh tế nước nhà
-D. Hiện đại hóa quân sự,an ninh đất nước
-1
 0
 0
 7. Mục đích xây dựng nềnQPTD, ANND vững mạnh là để:
@@ -77,39 +69,15 @@ C. Vai trò lãnh đạo của Đảng
 D. Tiềm lực kinh tế
 1
 0
-0
-11. Tiềm lực QPAN được thể hiện:
-A. Trên tất cả mọi hoạt động của các địa phương
-B. Trên tất cả mọi lĩnh vực của đời sống xã hội
-C. Trong tất cả mọihoạt động QPAN
-D. Trong quá trìnhcủng cố QP và AN
-2
-0
-0
-12. Việc tạo ra sức mạnh QPAN không chỉ ở SMQS, an ninh mà phải huy động được:
-A. Sức mạnh tinh thần của mọi người
-B. Sức mạnh vật chất của toàn xã hội
-C. Sức mạnh củatoàn dân về mọi mặt
-D. Sức mạnh củacác cấp, các nghành
-3
-0
-0
+1
 13. Sức mạnh của nền QPTD, ANNDở nước ta là SMTH được tạo thành bời:
 A. Tinh thần độc lập,tự chủ, tự lực, tự cường
 B. Rất nhiều yếu tố của dân tộc và của thời đại
 C. Giữ vững được hòabình, ổn định đất nước
 D. Rất nhiều yếu tốthực tiễn lịch sử, hiện tại
 2
-0
-0
-14. “Chính trị tinh thần”là yếu tố quyết định thắng lợi:
-A. Trên chiến trường
-B. Trong chiến tranh
-C. Trong cuộc chiến
-D. Trên mọi mặt trận
 1
-0
-0
+1
 15. Nền QPTD, ANND của nước ta thực chất là:
 A. Tiềm lực quốc phòng, an ninh của đất nước
 B. Khả năng quốc phòng, an ninh của đất nước
@@ -132,14 +100,6 @@ B. Chuẩn bị cho TQ đốiphó thành công với các tìnhhuống, lực l�
 C. Xây dựng lực lượng QP, AN đáp ứng yêu cầubảo vệ vững chắc TQ
 D. Xây dựng lực lượng QS, an ninh vững mạnh chuẩn bị cho chiến tranh
 3
-0
-0
-18. Cơ chế lãnh đạo, chỉ huyxây dựng nền QPTD, ANND:
-A. Đảng lãnh đạo, NNquản lý điều hành, QĐ, CA làm tham mưu
-B. Đảng chỉ đạo, NN quản lý điều hành, QP,AN đề xuất
-C. Đảng lãnh đạo,nhân dân làm chủ, BQP chỉ huy, điều hành
-D. NN chỉ đạo,Đảng lãnh đạo, QĐ, CA làm tham mưu
-1
 0
 0
 19. Cơ sở để xây dựng thế trận QPTD là:
@@ -165,7 +125,7 @@ C. Đặc trưng nền quốc phòng toàn dân, an ninh nhân dân
 D. Mục đích xây dựng nền quốc phòng toàn dân, an ninh nhân dân
 3
 0
-0
+1
 22. Lực lượng quốc phòng, an ninhcủa nền QPTD, ANND gồm có:
 A. Lực lượng toàn dân và LLVT nhân dân
 B. Lực lượng quân đội nhân dân và CAND
@@ -188,8 +148,8 @@ B. Của xã hội để tự vệ chống lại mọi thủ đoạn kẻ thù x
 C. Có thể huy động được để thực hiện nhiệm vụ quốc phòng, an ninh
 D. Có thể huy động được trong nhân dân để chiến đấu, bảo vệ TQ
 3
-0
-0
+1
+1
 25. Một trong những nội dungxây dựng thế trận QPTD, ANND:
 A. Phát triển lực lượng gắn với các vùng dân cư
 B. Xây dựng khu vực phòng thủ tỉnh (thành phố)
@@ -557,4 +517,44 @@ C. Tiềm lực chính trị
 D. Tiềm lực kinh tế
 4
 0
+0
+12. Việc tạo ra sức mạnh QPAN không chỉ ở SMQS, an ninh mà phải huy động được:
+A. Sức mạnh tinh thần của mọi người
+B. Sức mạnh vật chất của toàn xã hội
+C. Sức mạnh củatoàn dân về mọi mặt
+D. Sức mạnh củacác cấp, các nghành
+3
+1
+0
+18. Cơ chế lãnh đạo, chỉ huyxây dựng nền QPTD, ANND:
+A. Đảng lãnh đạo, NNquản lý điều hành, QĐ, CA làm tham mưu
+B. Đảng chỉ đạo, NN quản lý điều hành, QP,AN đề xuất
+C. Đảng lãnh đạo,nhân dân làm chủ, BQP chỉ huy, điều hành
+D. NN chỉ đạo,Đảng lãnh đạo, QĐ, CA làm tham mưu
+1
+1
+0
+11. Tiềm lực QPAN được thể hiện:
+A. Trên tất cả mọi hoạt động của các địa phương
+B. Trên tất cả mọi lĩnh vực của đời sống xã hội
+C. Trong tất cả mọihoạt động QPAN
+D. Trong quá trìnhcủng cố QP và AN
+2
+1
+0
+14. “Chính trị tinh thần”là yếu tố quyết định thắng lợi:
+A. Trên chiến trường
+B. Trong chiến tranh
+C. Trong cuộc chiến
+D. Trên mọi mặt trận
+1
+1
+0
+6. Quá trình hiện đại hóanền QPTD, ANND phải gắn liền với:
+A. Công nghiệp hóa, hiện đại hóa đất nước
+B. Tiềm lực khoa học công nghệ của nước ta
+C. Hiện đại hóa nền kinh tế nước nhà
+D. Hiện đại hóa quân sự,an ninh đất nước
+1
+1
 0
